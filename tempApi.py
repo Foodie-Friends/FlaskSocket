@@ -36,4 +36,4 @@ def send_doantions(data):
     emit("donation", data_queue, broadcast=True)
 
 if __name__ == "__main__":
-    socketio.run(app)
+    socketio.run(app,host="https://foodiefriends.azurewebsites.net",port=443)
