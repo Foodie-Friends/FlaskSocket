@@ -36,4 +36,4 @@ def send_doantions(data):
     emit("donation", data_queue, broadcast=True)
 
 if __name__ == "__main__":
-    socketio.run(app,port=443)
+    socketio.run(app,host='0.0.0.0',port=443,debug=True)
